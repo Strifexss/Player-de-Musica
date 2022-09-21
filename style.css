@@ -1,0 +1,198 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+    display: flex;
+
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 1900px;
+    width: 15%;
+    background-color: black;
+    color: #fff;
+    position: sticky;
+    
+}
+
+header h1 {
+    transform: translate(15px);
+    margin-top: 15px;
+    color: #fff;
+    
+}
+
+header h3 {
+    margin: 20px;
+    transform: translate(-10px);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header h3:hover {
+    color: rgb(155, 152, 152);
+
+}
+
+header audio {
+    width: 90%;
+    
+}
+
+.seusMixes {
+    color: #fff;
+    margin: 15px;
+}
+
+.seusMixes h1 {
+    font-size: 25px;
+    }
+.cardColection {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cards {
+    width: 150px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+
+.card1 {
+    display: grid;
+    grid-template-rows: 70%, 30%;
+}
+
+.cardImagem img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.cardDescricao {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 5px;
+}
+
+.cardDescricao h6 {
+    color: gray;
+} 
+
+.cards:hover {
+    background-color: black;
+    transform: scale(1);
+}
+
+.Artistas {
+    color: #fff;
+    margin: 20px;
+}
+
+.artistas h1 {
+    font-size: 25px;
+}
+
+.artistaBolhas {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.bolha {
+    margin: 15px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: linear 0.2s;
+    
+}
+
+.bolhaDescricao {
+    transform: translate(50px);
+}
+
+.bolha img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.bolha:hover {
+   transform: scale(1);
+}
+
+.artistaFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia1 {
+    color: #fff;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 20px;
+    width: 900px;
+    height: 300px;
+    background-color: black;
+    cursor: pointer;
+    transform:translate(150px) scale(0.9);
+    
+    transition: 0.2s;
+}
+
+.noticia1:hover {
+    transform:translate(150px)  scale(1);
+}
+
+.noticiaImagem {
+    background-image: url("imagens/PoesiaAcustica13.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.noticiaDescricao {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    justify-content: center;
+}
+
+.noticiaDescricao h6 {
+    transform: translate(18px);
+    color: gray;
+}
+
+.player { 
+    bottom: 0px;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
